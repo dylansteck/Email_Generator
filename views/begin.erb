@@ -1,19 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	<title> </title>
+	<title>Choose an Email!</title>
 </head>
 <body>
 	<h2>Choose an Email!</h2>
-	 <input type="radio"  name="email" value="apology" id="apology"/> Apology Email </label> <br/>
-	<input type="radio" name="email" value="thankyou" id="thankyou"/> Thank You Email </label> <br/>
-<input type="radio"  name="email" value="firstdate" id="firstdate"/> Date Proposal Email </label> <br/>
-<input type="radio"  name="email" value="greetings" id="greetings"/> Hello to an Old Friend Email </label> <br/>
-<input type="radio"  name="email" value="homework" id="homework"/> Homework Excuse Email </label> <br/>
-<input type="radio"  name="email" value="extention" id="extention"/> Extention Email for a Project or Due Date </label> <br/>
-<input type="radio"  name="email" value="happybirthday" id="happybirthday"/> Happy Birthday Email </label> <br/>
-
-
+	<form method="POST" action="/end.erb">
+		<% @email_types.each do |type| %>
+		<label>
+			<input type= "radio" name="email" value="name">
+			<%=type%>
+		</label>
+		<br/>
+					 <% end %> 
+ <input type="submit">
+</form>
 </body>
 	
 </html>
