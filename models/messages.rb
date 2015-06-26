@@ -3,9 +3,9 @@ class Emails
 	def initialize(message)
 		@message = message
 	end
-	
-	
-	
 		
 end
+ 
 
+
+	

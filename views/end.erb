@@ -8,28 +8,35 @@
 </head>
 <body>
 	<h1>You are done!!!</h1>
-	<h2> You chose:</h2> <%=@answer%>
+	<h2> You chose: <%=@answer%></h2>
 		<p>Here is your email:</p>
+	<p id="answers">
 	<% if @answer== @email_types[0] %>
-	<p>Dear <%=@answerone %>, I wanted to write you an email to apologize. What I did was a terrible thing, and horribly inappropriate. It was not a proper thing to do. Nothing I could say can justify my actions, but I can try to learn from my bad experience for the better of both of us. I hope that you forgive for this terrible sin that I made. Most sincerely, <%=@answertwo %>. </p>
+	<%=@apology.sample.message %>
 				<% end  %>
 	<%  if @answer== @email_types[1] %>
-		<p> Dear <%=@answerone %>, I wanted to write you this letter to thank you. The amazing opportunity which you have provided me has brought a great deal of success to my life, and there are no words which can express my gratefulness. I hope you have a wonderful day. Many thanks, <%=@answertwo %>. </p> 
+	<%=@thankyou.sample.message %>
 				<% end %>
 	<% if @answer== @email_types[2] %>
-	<p>Hi <%=@answerone %>, Roses are red, grass is green, you are very nice, will you go on a date with me? Yours truly, <%=@answertwo %></p>
+	<%=@date.sample.message %>
 	<% end %>
 	<% if @answer== @email_types[3] %>
-	<p> Greetings,<%=@answerone %>! Do you remember me? I'm ______. We used to know each other. It was a pleasure to run in to you the other day. I hope that we can catch up soon! Your pal, <%=@answertwo %>.</p>
+	<%=@hello.sample.message %>
 	<% end%>
 	<% if @answer== @email_types[4] %>
-	<p> Dear <%=@answerone %>, I am sorry that I do not have my homework. Today was a very busy day, and I did not have time to finish my work, even though I tried my hardest to make time to complete the task. It would be a great help to me if I had a little more time to do the assignment and possibly meet with you for help. Thank you! Sincerely, <%=@answertwo %>.</p>
+	<%=@homework.sample.message %>
 	<% end%>
 	<% if @answer== @email_types[5] %>
-	<p> Dear <%=@answerone %>, I am writing this email to cordially request the extension of my project. Though I have been hard at work, there are a few aspects I still need to touch on, and it would be a great help if I was granted more time, so I can produce my best work. Many thanks, <%=@answertwo %>.</p>
+	<%=@extension.sample.message %>
 	<% end %>
 	<% if @answer== @email_types[6] %>
-	<p>Dear <%=@answerone %>, Happy Birthday! I hope that you enjoy a merrifull day, and that you have health and happiness for you and your family during your next year! Have a great birthday! Best wishes,<%=@answertwo %>. </p>
+	<%=@birthday.sample.message %>
 	<% end %>
+	</p>
+	<div>
+		<a class="all" href="/">Go Again!</a>	
+		</div>
+	<img src="/images/borat.jpg">
+	
 </body>
 </html>

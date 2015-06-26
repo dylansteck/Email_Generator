@@ -17,3 +17,43 @@ h4{
 form {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+div  {
+    height:70px;
+    width:130px;
+    border-color:#6495ED;
+    background-color:#BCD2EE;
+    border-radius:5px;
+    margin:auto;
+    text-align:center;
+    font-family:Garamond;
+    }
+.all {
+	 background-color:#BCD2EE;
+	font-family: 'Dosis', sans-serif;
+	color:white;
+}
+img{
+	margin-left:25%;
+	margin-top:20%;
+	width:700px;
+	height:500px;
+}
+.q{
+	 background-color:#BCD2EE;
+	font-family: 'Dosis', sans-serif;
+	color:white;
+}
+#left {
+	height:70px;
+    width:130px;
+    border-color:#6495ED;
+    background-color:#BCD2EE;
+    border-radius:5px;
+    margin:auto;
+    text-align:center;
+    font-family:Garamond;
+		margin-left:0%;
+}
+#answers {
+	font-family: 'Dosis', sans-serif;
+}
