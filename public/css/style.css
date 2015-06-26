@@ -31,6 +31,7 @@ div  {
 	 background-color:#BCD2EE;
 	font-family: 'Dosis', sans-serif;
 	color:white;
+	margin-left:0%;
 }
 img{
 	margin-left:25%;
@@ -56,4 +57,11 @@ img{
 }
 #answers {
 	font-family: 'Dosis', sans-serif;
+}
+#ending {
+	margin-top:-15%;
+	margin-left:40%;
+}
+#all {
+	margin-left:0%;
 }
